@@ -31,7 +31,7 @@ body {
     width: 100%;
 }
 
-.logo {
+.logo{
     max-height: 40px;
     margin-left: 10px;
     top: 0;
@@ -558,7 +558,7 @@ h3 {
     font-size: 18px;
 }
 
-.swiper-button-prev::after,
+/* .swiper-button-prev::after,
 .swiper-button-next::after {
     content: '';
     display: none;
@@ -587,10 +587,11 @@ h3 {
 
 .swiper-pagination:active {
     color: #FF6436;
-}
+} */
 
 
 /*---------------------- Experience section---------------------*/
+
 .experience,
 .review,
 .blogs {
@@ -605,28 +606,47 @@ h3 {
      margin-top: 30px
 }
 
-.exp-content {
-    display: flex;
-    position: relative; 
+.experience .heading {
+    margin-bottom: 40px;
 }
 
 
-.experience .heading {
-    margin-bottom: 140px;
+.exp-content {
+ 
+    margin: 0 20px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;  
 }
 
 .features {
-    column-gap: 0px;
     margin-bottom: 150px;
 }
 
-.features img {
-    width: 250px;
-    margin-top: 40px;
+.features:last-child {
+    margin-bottom: 20; 
 }
 
-.right-parts svg,
-.left-parts svg {   
+
+.features img {
+    width: 250px;
+    margin: 0 20px;
+    /* margin-top: 40px; */
+}
+
+.f-icon i {
+    transform: rotate(-45deg);
+    color: #FF6436;
+    font-size: 40px;
+}
+
+.right-parts .features .f-icon  p{
+    margin-left: -50px;
+    text-align: right;
+   
+}
+
+.handshake {   
     text-align: center;
     align-items: center;
     box-shadow: 0 0 10px rgba(67, 63, 63, 0.3);
@@ -635,50 +655,20 @@ h3 {
     width: 70px;
     height: auto;
     padding: 10px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+   
 }
 
-.car-image{
-    margin-top: 250px;
-    margin-left: -160px;
+.car-image img {  
+    width: 400px;
 }
 
-.car-image img {
-   position: absolute;
-    transform: rotate(90deg);
-    width: 800px;
-}
-
-.features p{
+.features p {
+    padding-top: 10px;
     font-size: 12px;
     width: 120px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
 }
-
-.left-parts{
-    margin-left: 70px;
-    position: relative; 
-    left: 0; 
-    top: 0; 
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    
-}
-
-.right-parts {
-    margin-right: 70px;
-    text-align: right;
-    position: absolute; 
-    right: 0; 
-    top: 0; 
-    display: flex;
-    flex-direction: column;
-}
-
-
 
 .experience .brand-names .car {
     padding: 10px 20px;
@@ -689,24 +679,21 @@ h3 {
     box-shadow: 0 0 10px rgba(67, 63, 63, 0.3);
     border-radius: 6px;
     background-color: #FFFFFF;
-    /* height: 40px; */
-    /* width: 10px; */
     padding: 5px;
-    box-sizing: border-box; /* Include padding in total width and height */
+    box-sizing: border-box;
 }
-
 
 
 /*---------------------- Review section---------------------*/
 .review {
     background: url(../images/backgroudd.png) no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: auto;
     width: 100%;
     margin-top: 70px;
     margin-bottom: 20px;
     color: #E2E2E2;
-    overflow: hidden; /* Ensure no overflow */
+    overflow: hidden; 
 }
 
 .review .heading {
@@ -716,7 +703,7 @@ h3 {
 .back {
     background: rgba(5, 3, 3, 0.6);
     height: 120vh;
-    overflow: hidden; /* Ensure no overflow */
+    overflow: hidden; 
 }
 
 .review .heading p {
@@ -738,8 +725,8 @@ hr {
 
 .review-card {
     width: 100%;
-    margin-left: 20px;
-    width: 450px; /* Set a max-width for responsiveness */
+    /* margin-left: 20px; */
+    width: 450px; 
     box-sizing: border-box;
 }
 
@@ -751,13 +738,14 @@ hr {
 
 .card-slider {
     width: 100%;
-    overflow: hidden; /* Ensure no overflow */
+    overflow: hidden; 
 }
 
 .card-container {
+    justify-content: space-between;
     display: flex;
-    gap: 20px; /* Adjust gap between cards */
-    transition: transform 0.5s ease; /* Smooth transition */
+    gap: 40px; 
+    transition: transform 0.5s ease;
 }
 
 .feedback-two {
@@ -784,7 +772,7 @@ hr {
 .feedback {
     background: #253241;
     width: 100%;
-    width: 410px; /* Set a max-width for responsiveness */
+    width: 410px; 
     height: 180px;
     padding: 20px;
     position: relative;
