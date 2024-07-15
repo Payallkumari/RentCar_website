@@ -107,6 +107,7 @@
     .phone {
         display: none;
     }
+
 }
 
 
@@ -144,8 +145,51 @@
 
 }
 
+@media (max-width: 470px) {
+
+.logo{
+    max-height: 30px;
+    margin-left: 0px;
+}
+
+.right {
+    flex-wrap: wrap;
+    width: 1220px;
+    height: 50px;
+}
+
+.chat {
+  
+    padding: 4px;
+    margin-right: 10px;
+    margin-top: -30px;
+}
 
 
+.timing {
+    margin-left: 40px;
+}
+
+/* .select {
+    top: -70px;
+} */
+
+
+.logo-info {
+margin-top: -5px;
+margin-left: 4px;
+margin-bottom: 10px;
+}
+
+.logo-info p:first-child {
+font-size: 15px;
+}
+
+.logo-info p{
+font-size: 8px;
+}
+
+}
 
 @media (max-width: 590px) {
      .menu {
@@ -162,12 +206,6 @@
         height: 0;
         transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
-
-    /* .sub-navbar .sign-up,
-    .phone {
-        display: flex;
-    } */
-
     .menu a {
         padding: 10px;
         color: #fff; 
@@ -179,6 +217,31 @@
         cursor: pointer;
         font-size: 20px;
     }
+
+
+
+
+
+
+   
+    .features {
+        margin-bottom: 40px;
+    }
+    
+    .features img {
+        max-width: 50px;  
+    }
+    
+    .car-image img {
+        max-width: 150px;
+    }
+ 
+    
+.handshake {   
+  width: auto;
+    padding: 5px;
+}
+  
 }
 
 
@@ -230,6 +293,26 @@
          right: 0;
          transform: translateY(-50% , 50%);
      } 
+
+
+
+     
+
+
+
+.features {
+    margin-bottom: 110px;
+}
+
+.features img {
+    width: 180px;
+    margin-top: 20px;
+}
+
+.car-image img {
+    width: 300px;
+}
+
  }
  
  
@@ -282,7 +365,7 @@
   @media (max-width: 660px) {
  
      .hero{
-         height: 77vh;
+         height: 87vh;
      }
      
      .hero-content h1 {
@@ -309,6 +392,7 @@
          width: 100%;
          width: 400px;
      } 
+    
   }
   
 
@@ -343,6 +427,21 @@
     .newselters input {
         width: 50%;
     }
+
+    .features {
+        margin-bottom: 90px;
+    }
+    
+    .features img {
+        width: 140px;
+        margin-top: 20px;
+        margin: 0;
+    }
+    
+    .car-image img {
+        width: 250px;
+    }
+
 }
 
 @media (max-width: 490px) {
@@ -391,6 +490,8 @@
     }
 
 
+    
+
 
 
     
@@ -421,15 +522,52 @@
 .blog-cards button {
     width: 208px;
     height: 48px;
- 
     margin-bottom: 100px;
 }
-
-
-
 }
 
 
+@media (max-width: 760px) {
+
+.exp-content{
+    margin: 0;
+}
+
+.features {
+    margin-bottom: 60px;
+}
+
+.features img {
+    width: 100px;  
+}
+
+.car-image img {
+    width: 200px;
+}
+
+.f-icon  p{
+    font-size: 8px;
+    width: 70px;
+}
+
+.f-icon i {
+    font-size: 30px;
+}
+
+.right-parts .features .f-icon  p{
+    margin-left: -20px;
+}
+
+.left-parts .features .f-icon  p{
+    width: 70px;
+    text-align: left;
+   
+}
+
+.handshake {   
+    width: 50px;
+    padding: 5px;
+}
 
 
- 
+}
